@@ -27,9 +27,9 @@ function submitRate() {
         error.innerHTML = 'Select an option above'
     }
     else {
-        var cardRating = document.querySelector('div.card-rating')
-        cardThankYou = document.querySelector('div.card-thankyou')
-        spanNote = document.querySelector('span.span-thank-rating')
+        let cardRating = document.querySelector('div.card-rating')
+        let cardThankYou = document.querySelector('div.card-thankyou')
+        let spanNote = document.querySelector('span.span-thank-rating')
 
         cardRating.style.display = 'none'
         cardThankYou.style.display = 'block'
