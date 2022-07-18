@@ -2,8 +2,11 @@ let rate = 0
 let i = 0
 let options = document.querySelectorAll('.rate-note')
 let error = document.querySelector('span.span-error')
+let sbt = document.querySelector('.button-submit')
 
 options.forEach(mapButtons)
+
+sbt.onclick = submitRate
 
 function mapButtons() {
     options[i].onclick = getNote
