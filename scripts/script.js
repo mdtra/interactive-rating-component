@@ -6,7 +6,7 @@ let error = document.querySelector('span.span-error')
 options.forEach(mapButtons)
 
 function mapButtons() {
-    options[i].addEventListener('click', getNote)
+    options[i].onclick = getNote
     i++
 }
 
