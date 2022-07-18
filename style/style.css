@@ -143,6 +143,14 @@ body {
     color: var(--color-p);
 }
 
+.span-error {
+    display: none;
+    margin-top: 15px;
+    font-size: 14px;
+    font-style: italic;
+    color: rgb(173, 7, 7);
+}
+
 @media (max-width: 375px) {
     .card {
         margin-top: 60%;

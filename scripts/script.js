@@ -1,6 +1,7 @@
 let rate = 0
 let i = 0
 let options = document.querySelectorAll('.rate-note')
+let error = document.querySelector('span.span-error')
 
 options.forEach(mapButtons)
 
@@ -17,14 +18,16 @@ function getNote() {
 
     rate = Number(this.innerHTML)
     this.classList.add("checked-note")
+    error.style.display = 'none'
 }
 
 function submitRate() {
     if (rate === 0) {
-        alert ('Escolha um nota')
+        error.style.display = 'inline-block'
+        error.innerHTML = 'Select an option above'
     }
     else {
-        cardRating = document.querySelector('div.card-rating')
+        var cardRating = document.querySelector('div.card-rating')
         cardThankYou = document.querySelector('div.card-thankyou')
         spanNote = document.querySelector('span.span-thank-rating')
 
